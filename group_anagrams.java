@@ -12,11 +12,16 @@ Output:
 */
 
 
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
 
-class Solution {
+class Solution_anagram {
     public List<List<String>> groupAnagrams(String[] strs) {
         //List<List<String>> l=new List<List<>>();
-        Map<String,List> h=new HashMap<>();
+        Map<String, List> h=new HashMap<>();
         for(int i=0;i<strs.length;i++){
             char[] c=strs[i].toCharArray();
             Arrays.sort(c);
